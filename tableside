@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+
+# Exit on error.
+set -e
+
+# -----------------------------------------------------------------------------
+
+ABOUT_STRING="Tableside Helper Scripts | v0.0.1"
+
+# -----------------------------------------------------------------------------
+
+# Resolve the directory of the script
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+source "$DIR/src/log.sh"
+
+# -----------------------------------------------------------------------------
+
+# Check for required commands.
+
+function check_command() {
+    if ! command -v $1 &> /dev/null; then
+        ERROR "Command '$1' not found. Please install it." >&2
+        exit 1
+    fi
+}
+
+check_command "curl"
+check_command "jq"
+
+# -----------------------------------------------------------------------------
+
+# Include utilities.
+source "$DIR/src/array.sh"
+source "$DIR/src/base64.sh"
+
+# Include helper scripts.
+source "$DIR/src/env.sh"
+source "$DIR/api/auth.sh"
+
+# -----------------------------------------------------------------------------
+
+# Initialize the environment.
+
+BANNER "$ABOUT_STRING"
+load_env_from_dir "$DIR"
+SKIP_LINE
+
+# -----------------------------------------------------------------------------
+
+# Run the command.
+
+function print_help() {
+    echo -e "Usage: $0 [options]" >&2
+    echo -e "Options:" >&2
+    echo -e "  -h, --help      Print this help message." >&2
+    echo -e "  -v, --version   Print the version." >&2
+    echo -e "" >&2
+    echo -e "Commands:" >&2
+    echo -e "  seed            Seed the database." >&2
+}
+
+function print_version() {
+    echo "$ABOUT_STRING"
+}
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        -h|--help)
+            print_help
+            exit 0
+            ;;
+        -v|--version)
+            print_version
+            exit 0
+            ;;
+        seed)
+            source "$DIR/api/seed.sh"
+            exit 0
+            ;;
+        *)
+            ERROR "Unknown option: $1" >&2
+            print_help
+            exit 1
+            ;;
+    esac
+    shift
+done
+
+print_help
+exit 0
+
+# -----------------------------------------------------------------------------

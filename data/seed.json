@@ -1,0 +1,191 @@
+[
+    {
+        "restaurant": {
+            "name": "Lakeside Restaurant & Coffee Shop",
+            "description": "Operating with the School of Hospitality and Tourism Management, we offer a modern dining experience. Whether it's a leisurely meet with friends, a quick bite to eat, or to entertain that all-important business guest, Lakeside makes the ideal location for lunch."
+        },
+        "menus": [
+            {
+                "menu": {
+                    "name": "Breakfast"
+                },
+                "items": [
+                    {
+                        "displayName": "French Toast",
+                        "shortName": "French Toast",
+                        "description": "French toast served with maple syrup and bacon",
+                        "price": 8.29
+                    },
+                    {
+                        "displayName": "Eggs Benedict",
+                        "shortName": "Eggs Benedict",
+                        "description": "Poached eggs on a toasted muffin with ham and hollandaise sauce",
+                        "price": 4.99
+                    },
+                    {
+                        "displayName": "Full English Breakfast",
+                        "shortName": "Full English Breakfast",
+                        "description": "Two rashers of bacon, two sausages, two eggs, beans, mushrooms, tomato, and toast",
+                        "price": 6.49
+                    },
+                    {
+                        "displayName": "Pancakes with Maple Syrup and Bacon",
+                        "shortName": "Bacon Pancakes",
+                        "description": "Pancakes served with maple syrup and bacon",
+                        "price": 11.99
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": {
+            "name": "Hillside Restaurant",
+            "description": "With a great selection of food and drink choices and more than 400 seats with a mix of modern stools and urban bench tables, Hillside is a great place to meet up, relax and enjoy some nourishing fresh food throughout your day."
+        },
+        "menus": [
+            {
+                "menu": {
+                    "name": "All Day"
+                },
+                "items": [
+                    {
+                        "displayName": "Chicken Caesar Salad",
+                        "shortName": "Caesar Salad",
+                        "description": "Grilled chicken breast, cos lettuce, croutons, and Caesar dressing",
+                        "price": 7.99
+                    },
+                    {
+                        "displayName": "Caffe Latte",
+                        "shortName": "Latte",
+                        "description": "A shot of espresso with steamed milk and a small amount of froth",
+                        "price": 2.49
+                    },
+                    {
+                        "displayName": "Cappuccino",
+                        "shortName": "Cappuccino",
+                        "description": "A shot of espresso with steamed milk and a generous amount of froth",
+                        "price": 2.49
+                    },
+                    {
+                        "displayName": "Americano",
+                        "shortName": "Americano",
+                        "description": "A shot of espresso with hot water",
+                        "price": 2.49
+                    },
+                    {
+                        "displayName": "Freddo Cappucino",
+                        "shortName": "Freddo Cappucino",
+                        "description": "A shot of espresso with cold milk and ice. Made with Freddo Frog chocolate",
+                        "price": 3.49
+                    },
+                    {
+                        "displayName": "Actual Freddo Cappucino",
+                        "shortName": "Freddo Cappucino",
+                        "description": "A shot of espresso with cold milk and ice. Not made with Freddo Frog chocolate",
+                        "price": 2.49
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": {
+            "name": "The Coffee Pod",
+            "description": "Artisan coffee, freshly made sandwiches, and a range of delicious cakes and pastries. The Coffee Pod is the perfect place to grab a quick bite to eat or relax with a coffee and a cake."
+        },
+        "menus": [
+            {
+                "menu": {
+                    "name": "Coffee"
+                },
+                "items": [
+                    {
+                        "displayName": "Cappuccino",
+                        "shortName": "Cappuccino",
+                        "description": "A shot of espresso with steamed milk and a generous amount of froth",
+                        "price": 2.49
+                    },
+                    {
+                        "displayName": "Americano",
+                        "shortName": "Americano",
+                        "description": "A shot of espresso with hot water",
+                        "price": 2.49
+                    },
+                    {
+                        "displayName": "Caffe Latte",
+                        "shortName": "Latte",
+                        "description": "A shot of espresso with steamed milk and a small amount of froth",
+                        "price": 2.49
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": {
+            "name": "The Burger Shack",
+            "description": "Renowned for its delicious burgers, The Burger Shack won't disappoint. From farm to fork, our burgers are made from 100% British beef and are served in a brioche bun with a side of fries."
+        },
+        "menus": [
+            {
+                "menu": {
+                    "name": "Burgers"
+                },
+                "items": [
+                    {
+                        "displayName": "Cheeseburger",
+                        "shortName": "Cheeseburger",
+                        "description": "Beef patty, cheese, lettuce, tomato, and burger sauce",
+                        "price": 6.99
+                    },
+                    {
+                        "displayName": "Bacon Cheeseburger",
+                        "shortName": "Bacon Cheeseburger",
+                        "description": "Beef patty, cheese, bacon, lettuce, tomato, and burger sauce",
+                        "price": 7.99
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "restaurant": {
+            "name": "The Deli",
+            "description": "The Deli offers a range of freshly made sandwiches, salads, and snacks. With a selection of hot and cold drinks, it's the perfect place to grab a quick bite to eat."
+        },
+        "menus": [
+            {
+                "menu": {
+                    "name": "Specials Menu"
+                },
+                "items": [
+                    {
+                        "displayName": "Chicken Caesar Salad",
+                        "shortName": "Caesar Salad",
+                        "description": "Grilled chicken breast, cos lettuce, croutons, and Caesar dressing",
+                        "price": 7.99
+                    },
+                    {
+                        "displayName": "Greek Salad",
+                        "shortName": "Greek Salad",
+                        "description": "Mixed leaves, cherry tomatoes, cucumber, red onion, feta cheese, and olives",
+                        "price": 6.99
+                    },
+                    {
+                        "displayName": "Ham and Cheese Sandwich",
+                        "shortName": "Ham and Cheese Sandwich",
+                        "description": "Ham, cheese, lettuce, and tomato on white or brown bread",
+                        "price": 3.99
+                    },
+                    {
+                        "displayName": "Tuna Mayonnaise Sandwich",
+                        "shortName": "Tuna Mayonnaise Sandwich",
+                        "description": "Tuna mayonnaise, lettuce, and cucumber on white or brown bread",
+                        "price": 3.99
+                    }
+                ]
+            }
+        ]
+    }
+]
